@@ -1,0 +1,2 @@
+[main/sessions/main/987114e7-6e93-465f-a93d-889d1a60f93d.jsonl#L2] Assistant: ✅ Session reset.
+[main/sessions/main/987114e7-6e93-465f-a93d-889d1a60f93d.jsonl#L5] User: 你是怎么做到自动重启的

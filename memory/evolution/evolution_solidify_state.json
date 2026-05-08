@@ -235,5 +235,22 @@
     "commitment_deadline": null,
     "applied_lessons": [],
     "hub_lessons": []
-  }
+  },
+  "last_solidify": {
+    "run_id": "run_1775184238856",
+    "at": "2026-05-05T12:27:09.956Z",
+    "event_id": "evt_1777984029956",
+    "capsule_id": null,
+    "outcome": {
+      "status": "failed",
+      "score": 0.52
+    }
+  },
+  "last_validation_failure": {
+    "cmd": "node scripts/validate-modules.js ./src/evolve ./src/gep/solidify ./src/gep/policyCheck ./src/gep/selector ./src/gep/memoryGraph ./src/gep/assetStore",
+    "stderr": "node:internal/modules/cjs/loader:1459\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'C:\\Users\\002\\.openclaw\\workspace\\scripts\\validate-modules.js'\r\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1456:15)\r\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)\r\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)\r\n    at Module._load (node:internal/modules/cjs/loader:1242:25)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\r\n  ",
+    "retries_attempted": 2,
+    "at": "2026-05-05T12:27:09.956Z"
+  },
+  "solidify_count": 1
 }
