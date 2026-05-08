@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-08T12:52:35.228Z",
+  "updatedAt": "2026-05-08T19:00:02.176Z",
   "entries": {
     "memory:memory/2026-04-06.md:1:26": {
       "key": "memory:memory/2026-04-06.md:1:26",
@@ -9,21 +9,23 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# 2026-04-06 日志 ## SQL对比任务（carbon.sql vs carbon改版.sql） **任务**：对比两个SQL文件，筛选\"销售计划完成率\"相关内容，输出到桌面 **文件位置**： - 原始：`D:\\Users\\002\\Desktop\\问题\\carbon.sql`（7.96MB，29340条语句） - 改版：`D:\\Users\\002\\Desktop\\问题\\carbon改版.sql`（6.75MB，27609条语句） **结果**： - 改版新增：660条 - 原始删除：666条 - 相同语句：11210条 - 输出文件：`D:\\Users\\002\\Desktop\\销售计划完成率差异.md`（372KB） **匹配关键词**：`销售计划`、`完成率`、`销售` **筛选结果涉及表**：`bid_bidding`、`contract_detail`、`data`等 **技术细节**： - Python 脚本：`C:\\Users\\002\\.openclaw\\workspace\\filter_sales_run.py` - 正则技巧：`s.replace('\\`', '')` 去除反引号后提取表名 - 归一化：去反引号 + VALUES PK值归一为 `@PK@` - Node.js 读取验证内容（PowerShell Python stdout 不支持UTF-8显示）",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.3156726456985326,
-      "maxScore": 0.7860762194644787,
+      "totalScore": 3.3156726456985326,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-08T12:31:16.233Z",
-      "lastRecalledAt": "2026-04-09T00:24:11.289Z",
+      "lastRecalledAt": "2026-05-08T13:26:17.562Z",
       "queryHashes": [
         "b88653a73c83",
         "57d8d16cc0f9",
-        "959c3f9bb929"
+        "959c3f9bb929",
+        "3671324b5b29"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-09"
+        "2026-04-09",
+        "2026-05-08"
       ],
       "conceptTags": [
         "carbon.sql",
@@ -34,7 +36,8 @@
         "bid-bidding",
         "contract-detail",
         "filter-sales-run.py"
-      ]
+      ],
+      "promotedAt": "2026-05-08T19:00:02.176Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:1:1",
@@ -9517,6 +9520,2206 @@
         "怎么",
         "做到",
         "自动"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: 备份成功 ✅ - **文件:** `C:\\Users\\002\\openclaw-backups\\openclaw-2026-05-08_2053.zip` - **大小:** 423.1 MB - **Git 提交:** 自动提交已完成（27 个文件变更）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "备份",
+        "openclaw-backups",
+        "openclaw-2026-05-08-2053.zip",
+        "423.1",
+        "成功",
+        "文件"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 好问题。OpenClaw 的自动重启机制有几层，我分开说： --- ### 1. 配置变更时的热重载 vs 重启 当通过 `gateway` 工具改配置（`config.patch` / `config.apply`）时： - **优先热重载** — 大部分配置项可以直接在内存中生效，不需要重启进程。用 `gateway config.schema.lookup` 可以看到每个字段是否支持热重载。 - **只有改不动的时候才重启** — 比如改了底层 provider 注册、网络绑定地址这类需要重新初始化的配置，才会触发安全重启。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "网络",
+        "config.patch",
+        "config.apply",
+        "config.schema.lookup",
+        "问题",
+        "openclaw",
+        "自动"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: 有另一台哦openclaw，它修改完openclaw.json后说要重启，结果只是网关直接杀了，不会重启",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "网关",
+        "它修改完openclaw.json后说要重启",
+        "另一",
+        "openclaw",
+        "修改",
+        "openclaw.json",
+        "结果",
+        "只是"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 这种情况通常是因为那个实例的 Gateway 进程**没有进程守护（daemon/manager）**。 让我猜一下场景： ### 常见死法 那个实例大概率是以**前台进程**方式跑的： ```powershell # 直接在终端里跑 openclaw gateway start # 或者 node openclaw-gateway.js ``` 当 `gateway restart` 发出后： 1. 向当前 Gateway 进程发终止信号 2. Gateway 进程收到信号 → 优雅退出 3. **问题来了** — 因为它是前台跑",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "daemon/manager",
+        "openclaw-gateway.js",
+        "这种",
+        "情况",
+        "通常",
+        "因为",
+        "那个"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: 你的进程守护是什么",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "你的",
+        "进程",
+        "什么"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "User: 你的进程守护是什么",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "你的",
+        "进程",
+        "什么"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: 直接回答：**没有传统意义上的进程守护。** 我刚才查了一下本机的进程树： ``` Windows Terminal (PID 36980) └─ PowerShell (PID 28824) └─ node.exe / openclaw gateway (PID 33572) ``` Gateway 其实就是 PowerShell 的一个子进程，没有任何 systemd / PM2 / Windows Service 在上面看着它。 --- ### 那重启是怎么做到的？ 重启靠的是 **OpenClaw CLI 自己**： 1.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "node.exe",
+        "直接",
+        "回答",
+        "没有",
+        "传统",
+        "意义",
+        "进程"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: 不是同一个进程树，或者调用者本身就是 Gateway 自己，杀了自己之后没有\"还活着\"的父进程来 respawn。 --- ### 正确的运行方式 **Linux/Mac 用 systemd**（官方推荐）：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "linux/mac",
+        "不是",
+        "一个",
+        "进程",
+        "或者",
+        "本身",
+        "就是"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 好了，现在清楚了。直接说结论： --- ### 本机（Windows）— 没有进程守护 Gateway 只是 PowerShell 的子进程。重启能work，是因为 CLI 本身还在 PowerShell 里活着，发完信号自己重新拉起。 ### 官方推荐的方式（Linux）— systemd Linux 上 OpenClaw 有正经的守护： ```bash openclaw onboard --install-daemon # 或 openclaw gateway install ``` 会创建一个 **systemd user s",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "install-daemon",
+        "好了",
+        "现在",
+        "清楚",
+        "直接",
+        "结论",
+        "windows"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "User: 怎么删除之前的的openclaw gateway install重新安装",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "怎么",
+        "删除",
+        "之前",
+        "openclaw",
+        "install",
+        "重新",
+        "安装"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: 让我先查一下文档里有没有卸载/重装的相关说明。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "让我先查一下文档里有没有卸载/重装的相关说明",
+        "我先",
+        "一下",
+        "没有",
+        "重装",
+        "相关",
+        "说明"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 文档很完整。根据你另一台机器的系统来： --- ### Windows（另一台机器是 Windows 的话） **1. 停止并卸载 Gateway 服务** ```powershell openclaw gateway stop openclaw gateway uninstall ``` **2. 手动清理残留的 Scheduled Task（万一没卸干净）** ```powershell schtasks /Delete /F /TN \"OpenClaw Gateway\" Remove-Item -Force \"$env:USE",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "remove-item",
+        "完整",
+        "根据",
+        "另一",
+        "机器",
+        "系统",
+        "windows"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: openclaw@latest # 重新注册systemd openclaw gateway install ``` --- **核心就三步：先卸干净 → 再重装 → 最后注册服务。**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw",
+        "latest",
+        "重新",
+        "注册",
+        "systemd",
+        "install",
+        "核心"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "User: 会丢失原有的会话和配置吗",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "丢失",
+        "原有",
+        "会话",
+        "配置"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: 好问题。**取决于你删不删 `~/.openclaw` 那个目录**。 --- ### 关键：OpenClaw 的数据在哪 ``` ~/.openclaw/ ├── openclaw.json ← 配置文件（模型、插件、渠道等） ├── agents/ ← Agent 配置、会话状态 ├── credentials/ ← 登录凭证（微信、Discord等） ├── plugins/ ← 安装的插件 ├── sessions/ ← 对话历史 └── workspace/ ← 工作区（AGENTS.md 等） ``` CLI 本身只是个",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "openclaw.json",
+        "agents.md",
+        "问题",
+        "取决",
+        "openclaw",
+        "那个",
+        "目录",
+        "关键"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: # Windows PowerShell Copy-Item -Recurse \"$env:USERPROFILE\\.openclaw\" \"$env:USERPROFILE\\.openclaw.backup\" # Linux/Mac cp -r ~/.openclaw ~/.openclaw.backup ``` 出了问题直接 `mv ~/.openclaw.backup ~/.openclaw` 恢复。 --- **总结：只要不删 `~/.openclaw`，配置和会话都在。** 卸载命令本身不会动你的数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "copy-item",
+        "openclaw.backup",
+        "linux/mac",
+        "windows",
+        "powershell",
+        "copy",
+        "item"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "User: 你的自我净化相关的技能有用吗",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "你的",
+        "自我",
+        "净化",
+        "相关",
+        "技能",
+        "有用"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: 让我先看看这两个技能的状态。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "我先",
+        "看看",
+        "技能",
+        "状态"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: 让我再看看工作区里 `.learnings/` 和 capability-evolver 的实际状态。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "capability-evolver",
+        "我再",
+        "看看",
+        "工作",
+        "learnings",
+        "capability",
+        "evolver",
+        "实际"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: 说实话，**两个都没怎么用上**。 --- ### self-improvement `.learnings/` 目录建了，但三个文件全是空的： - LEARNINGS.md → 空 - ERRORS.md → 空 - FEATURE_REQUESTS.md → 空 这个技能的核心逻辑是**你犯错/被纠正时手动记录**，然后后续 Coding Agent 读取并自动修。 但我的实际情况是： - 真正重要的经验我直接写进 `MEMORY.md` 了 - 每天的事情记录在 `memory/YYYY-MM-DD.md` - 格式随意但够用",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "self-improvement",
+        "learnings.md",
+        "errors.md",
+        "feature-requests.md",
+        "你犯错/被纠正时手动记录",
+        "memory.md",
+        "memory/yyyy-mm-dd.md",
+        "实话"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: 已删除： - ✅ `~/.openclaw/workspace/.learnings/` 整个目录 - ✅ `~/.openclaw/workspace/skills/capability-evolver/` 干净了。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "openclaw/workspace",
+        "删除",
+        "openclaw",
+        "learnings",
+        "整个",
+        "目录",
+        "skills",
+        "capability"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "User: 你目前记住或学习了哪些错误",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "目前",
+        "记住",
+        "学习",
+        "哪些",
+        "错误"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: 翻了记忆文件，总结如下： --- ### 记住的错误 | 时间 | 问题 | 后果 | 修复 | |------|------|------|------| | 4月初 | **PowerShell `&` 符号用法错误** | exec 命令失败 | evolver 检测到并生成修复基因 | | 4月中旬 | **模型 ID 不匹配**（配置 `claude-sonnet-4-6` vs 系统用 `openai/claude-sonnet-4-6`） | FailoverError，任务全部失败 | 在 provider 里添加带",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "failover",
+        "openai",
+        "claude-sonnet-4-6",
+        "openai/claude-sonnet-4-6",
+        "翻了",
+        "记忆",
+        "文件",
+        "总结"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "User: 这是所有了吗",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "所有"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: 让我仔细翻一遍所有记忆文件确认一下。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "仔细",
+        "一遍",
+        "所有",
+        "记忆",
+        "文件",
+        "确认",
+        "一下"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: 翻完了，还有不少没记进去。补充完整列表： --- ### 完整错误记录 | 时间 | 问题 | 根因 | |------|------|------| | 4月初 | PowerShell `&` 符号用法错误 | evolver 检测到 | | 4月初 | **ali provider 无 API key** | `auth-profiles.json` 里没有阿里云凭证 | | 4月初 | **中文内容乱码**（鉁?宸叉垚鍔?） | PowerShell/Node.js 中文输出编码问题 | | 4月初 | **snapshot",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "auth-profiles.json",
+        "powershell/node.js",
+        "完了",
+        "还有",
+        "不少",
+        "没记",
+        "进去",
+        "补充"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: 不匹配** (`openai/claude-sonnet-4-6`) | 前缀缺失导致 FailoverError | | 4月15日 | **plugins.allow 为空** | 插件加载受限，触发安全警告 | | 4月15日 | **MinMax-M2.7 全部返回 503** | 分组 default 下模型不可用 | | 4月15日 | **cron service unavailable** | dreaming cron 重建失败 | | 4月20日 | **模型 ID 带空格** (`MinMax M2.7`) |",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "failover",
+        "openai",
+        "openai/claude-sonnet-4-6",
+        "plugins.allow",
+        "minmax-m2.7",
+        "m2.7",
+        "匹配",
+        "claude"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "User: 同一个局域网下有另一个openclaw，IP地址可以ping通，怎么web访问",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "一个",
+        "openclaw",
+        "地址",
+        "可以",
+        "ping",
+        "怎么",
+        "web",
+        "访问"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: 两种方式，先说推荐的安全方案： --- ### 方案一：SSH 隧道（推荐） **在你自己这台机器上**（不是远程那台），打开 PowerShell： ```powershell ssh -N -L 18789:127.0.0.1:18789 用户名@远程IP ``` 例如： ```powershell ssh -N -L 18789:127.0.0.1:18789 admin@192.168.1.100 ``` 隧道建立后，远程的 `127.0.0.1:18789` 就映射到了你本地的 `127.0.0.1:18789`。 然后在",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "127.0.0.1",
+        "192.168.1.100",
+        "方式",
+        "推荐",
+        "安全",
+        "方案",
+        "ssh",
+        "隧道"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: |------|------| | 远程机器能 SSH 到 | **方案一**（安全，默认推荐） | | 远程机器不方便 SSH | 方案二，但务必开 auth | | 只是临时测试 | 方案一最省事 | 你另一台机器是 Windows 还是 Linux？能 SSH 吗？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "远程",
+        "机器",
+        "ssh",
+        "方案",
+        "安全",
+        "默认",
+        "推荐",
+        "方便"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "User: \"token\"需要换成具体的字符串吗",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "token",
+        "需要",
+        "具体",
+        "字符"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: 不需要换。`token` 在这里是**模式名称**（告诉 OpenClaw \"我要用 token 方式验证\"），照写就行。 --- ### 实际上要设两个东西 **第一个**：设置认证模式 ```powershell openclaw config set gateway.auth.mode \"token\" ``` → `token` 是固定值，意思是\"启用 token 验证\" **第二个**：设置实际的 token 密码 ```powershell openclaw config set gateway.auth.token \"你",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.auth.mode",
+        "gateway.auth.token",
+        "不需要",
+        "token",
+        "这里",
+        "模式",
+        "名称"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "User: 报错origin not allowed (open the Control UI from the gateway host or allow it in gateway.controlUi.allowedOrigins)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.controlui.allowedorigins",
+        "origin",
+        "not",
+        "allowed",
+        "open",
+        "control",
+        "host"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: 这是 CORS 跨域问题。远程 Gateway 不认你这个浏览器的来源。 在你**本机浏览器**访问的那个地址是什么？比如： - `http://192.168.1.100:18789` → 来源是 `http://192.168.1.100:18789` - 还是其他？ 先确认一下，然后我在**远程那台机器**上帮你加到允许列表里。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "192.168.1.100",
+        "cors",
+        "问题",
+        "远程",
+        "这个",
+        "浏览",
+        "来源"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "User: http://10.6.22.1:18789/chat?session=main",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "10.6.22.1",
+        "18789/chat",
+        "http",
+        "chat"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: 在**远程那台机器**上运行： ```powershell openclaw config set gateway.controlUi.allowedOrigins \"http://10.6.22.1:18789\" ``` 然后重启： ```powershell openclaw gateway restart ``` 重启后再访问应该就好了。如果以后还要从其他地址访问，加上去就行（多个用逗号分隔）。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.controlui.allowedorigins",
+        "10.6.22.1",
+        "远程",
+        "那台",
+        "机器",
+        "运行",
+        "powershell"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "User: C:\\Users\\001>openclaw config set gateway.controlUi.allowedOrigins \"http://10.6.22.1:18789\" 🦞 OpenClaw 2026.5.7 (eeef486) — Your second brain, except this one actually remembers where you left things. Error: Config validation failed: gateway.controlUi.allowedOrigins: Invali",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.controlui.allowedorigins",
+        "10.6.22.1",
+        "2026.5.7",
+        "users",
+        "openclaw",
+        "config",
+        "set"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: 数组格式，要用 JSON 数组： ```powershell openclaw config set gateway.controlUi.allowedOrigins \"[\\\"http://10.6.22.1:18789\\\"]\" ``` 或者直接改配置文件，加这一行： ```json \"gateway\": { \"controlUi\": { \"allowedOrigins\": [\"http://10.6.22.1:18789\"] } } ```",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.controlui.allowedorigins",
+        "10.6.22.1",
+        "格式",
+        "要用",
+        "powershell",
+        "openclaw",
+        "config"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "User: control ui requires device identity (use HTTPS or localhost secure context)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "control",
+        "requires",
+        "device",
+        "identity",
+        "use",
+        "https",
+        "localhost",
+        "secure"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: 这是浏览器的安全策略——HTTP + 非 localhost 被视为\"不安全上下文\"，Control UI 不允许加载。 最简单的解法：**用 SSH 隧道绕过去**，这样就变成了 `ws://127.0.0.1:18789`（localhost），天然满足安全要求。 --- 在你本机（能 ping 通 10.6.22.1 的这台）PowerShell 里跑： ```powershell ssh -N -L 18789:127.0.0.1:18789 用户名@10.6.22.1 ``` 然后本机浏览器访问： ``` http://1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "127.0.0.1",
+        "10.6.22.1",
+        "浏览",
+        "安全",
+        "策略",
+        "http",
+        "localhost",
+        "视为"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "User: 在远程机器上加 HTTPS 支持",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "远程",
+        "机器",
+        "https",
+        "支持"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: OpenClaw 自带 TLS 支持，有两种方式： --- ### 方式一：自动生成自签名证书（最简单） 在**远程机器**上： ```powershell openclaw config set gateway.tls.enabled true openclaw config set gateway.tls.autoGenerate true openclaw gateway restart ``` 重启后访问： ``` https://10.6.22.1:18789/chat?session=main ``` → 浏览器会提示证",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.tls.enabled",
+        "gateway.tls.autogenerate",
+        "10.6.22.1",
+        "18789/chat",
+        "openclaw",
+        "tls",
+        "支持"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "User: 用ssh只能在127.0.0.0上吗",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "用ssh只能在127.0.0.0上吗",
+        "ssh",
+        "只能",
+        "127.0.0.0"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: 不是，SSH 隧道的意思是： **远程机器的 18789 端口 → 映射到你本地的 18789 端口** 所以你访问的是**你本地的 127.0.0.1:18789**，但数据通过 SSH 隧道\"穿越\"到了远程机器。 --- ### 具体流程 ```powershell # 在你本机（不是远程）PowerShell 里运行 ssh -N -L 18789:127.0.0.1:18789 用户名@远程IP ``` 这条命令的意思是： ``` 你本机的 :18789 ←—— SSH 隧道 ——→ 远程机器的 127.0.0.1:1878",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "127.0.0.1",
+        "不是",
+        "ssh",
+        "隧道",
+        "意思",
+        "远程",
+        "机器",
+        "映射"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "User: PS C:\\Users\\001> openclaw gateway restart 🦞 OpenClaw 2026.5.7 (eeef486) — One CLI to rule them all, and one more restart because you changed the port. Restarted Scheduled Task: OpenClaw Gateway PS C:\\Users\\001> openclaw gateway 🦞 OpenClaw 2026.5.7 (eeef486) — I'm not AI-p",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "2026.5.7",
+        "ai-p",
+        "users",
+        "openclaw",
+        "restart",
+        "eeef486",
+        "one"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: 远程机器没有 OpenSSL，自动生成证书失败了。 最简单的解法：**直接用 SSH 隧道**，不用改 TLS 配置。刚才 TLS 那几条命令不用管了。 --- ### SSH 隧道方式（在你本机跑） 在你**本机**（不是远程）PowerShell 里： ```powershell ssh -N -L 18789:127.0.0.1:18789 001@10.6.22.1 ``` 然后本机浏览器访问： ``` http://127.0.0.1:18789/chat?session=main ``` --- ### 如果想用 HTT",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "127.0.0.1",
+        "10.6.22.1",
+        "18789/chat",
+        "远程",
+        "机器",
+        "没有",
+        "openssl",
+        "自动"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "User: 我想同时控制两个openclaw ，ssh会把你挤下去",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "我想",
+        "同时",
+        "控制",
+        "openclaw",
+        "ssh",
+        "下去"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: 明白了，两个 SSH 隧道会抢本地 18789 端口。用不同的本地端口就行： --- ### 同时控制两个的方法 **隧道1**（本机 18789 → 远程A）： ```powershell ssh -N -L 18789:127.0.0.1:18789 001@远程A的IP ``` **隧道2**（本机 18790 → 远程B）： ```powershell ssh -N -L 18790:127.0.0.1:18789 001@远程B的IP ``` 然后浏览器： - 远程A：`http://127.0.0.1:18789/cha",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "127.0.0.1",
+        "18789/cha",
+        "明白",
+        "ssh",
+        "隧道",
+        "本地",
+        "不同",
+        "同时"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "Assistant: 3. 开启 TLS openclaw config set gateway.tls.enabled true openclaw config set gateway.tls.certPath \"C:\\Users\\001\\.openclaw\\cert.pfx\" openclaw config set gateway.tls.keyPath \"\" # PFX 文件同时包含私钥，留空 openclaw gateway restart ``` 然后浏览器直接访问： ``` https://10.6.22.1:18789/chat?sessi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.tls.enabled",
+        "gateway.tls.certpath",
+        "cert.pfx",
+        "gateway.tls.keypath",
+        "10.6.22.1",
+        "18789/chat",
+        "开启"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "User: 🦞 OpenClaw 2026.5.7 (eeef486) — Your .env is showing; don't worry, I'll pretend I didn't see it. │ ◇ 22:18:29 [gateway] loading configuration… 22:18:30 [gateway] resolving authentication… 22:18:30 [gateway] starting... 22:18:33 [gateway] wrote stability bundle: C:\\Users\\00",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "2026.5.7",
+        "openclaw",
+        "eeef486",
+        "env",
+        "showing",
+        "don't",
+        "worry"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: 证书还没生成就直接重启了。按顺序跑： ```powershell # 1. 生成证书 $cert = New-SelfSignedCertificate -DnsName \"10.6.22.1\" -CertStoreLocation \"Cert:\\CurrentUser\\My\" -NotAfter (Get-Date).AddYears(1) # 2. 导出为 PFX $password = ConvertTo-SecureString -String \"YourPassword123\" -Force -AsPlainText Ex",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "new-selfsignedcertificate",
+        "10.6.22.1",
+        "get-date",
+        "convertto-securestring",
+        "证书",
+        "生成",
+        "直接",
+        "顺序"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Assistant: 好，证书文件在。直接重启试试： ```powershell openclaw gateway restart ``` 如果还是报 `cert/key missing`，可能是 `keyPath` 不能为空，试试删掉 keyPath 配置： ```powershell openclaw config set gateway.tls.keyPath $null openclaw gateway restart ```",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "cert/key",
+        "gateway.tls.keypath",
+        "证书",
+        "文件",
+        "直接",
+        "powershell",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "User: PS C:\\Users\\001> openclaw gateway 🦞 OpenClaw 2026.5.7 (eeef486) — Your .env is showing; don't worry, I'll pretend I didn't see it. │ ◇ 22:18:29 [gateway] loading configuration… 22:18:30 [gateway] resolving authentication… 22:18:30 [gateway] starting... 22:18:33 [gateway] w",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "2026.5.7",
+        "users",
+        "openclaw",
+        "eeef486",
+        "env",
+        "showing",
+        "don't"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "User: C:\\Users\\001> # 尝试加载证书（密码错误会直接报错） PS C:\\Users\\001> try { >> $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($pfxPath, $password) >> Write-Host \"✅ PFX 文件有效，有效期至 $($cert.NotAfter)\" >> $cert.Thumbprint >> } catch { >> Write-Host \"❌ 加载失败: $_\" >",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "new-object",
+        "write-host",
+        "cert.notafter",
+        "cert.thumbprint",
+        "users",
+        "尝试",
+        "证书",
+        "密码"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "User: after uninstall. PS C:\\Users\\001> openclaw gateway install 🦞 OpenClaw 2026.5.7 (eeef486) — Deployed locally, trusted globally, debugged eternally. Gateway service already registered. Reinstall with: openclaw gateway install --force PS C:\\Users\\001> openclaw gateway restart",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "2026.5.7",
+        "uninstall",
+        "users",
+        "openclaw",
+        "install",
+        "eeef486",
+        "deployed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "User: C:\\Users\\001\\.openclaw\\logs\\stability\\openclaw-stability-2026-05-08T14-25-04-196Z-15016-gateway.startup_failed.json Gateway failed to start: Error: gateway tls: cert/key missing PS C:\\Users\\001>",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "gateway",
+        "cert/key",
+        "users",
+        "openclaw",
+        "logs",
+        "stability",
+        "08t14",
+        "196z"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: 问题是 OpenClaw 期望的是**分开的** `.pem` 文件（证书 + 私钥），不是 PFX。需要从 PFX 导出成两个文件。 检查远程机器有没有 OpenSSL： ```powershell where.exe openssl ``` 如果找不到，用 PowerShell 手动导出 PEM： ```powershell # 导入证书和私钥 $pfxPath = \"$env:USERPROFILE\\.openclaw\\cert.pfx\" $password = \"YourPassword123\" $outDir = \"$en",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "where.exe",
+        "cert.pfx",
+        "问题",
+        "openclaw",
+        "期望",
+        "的是",
+        "分开",
+        "pem"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "User: PS C:\\Users\\001> where.exe openssl 信息: 用提供的模式无法找到文件。 PS C:\\Users\\001> $pfxPath = \"$env:USERPROFILE\\.openclaw\\cert.pfx\" PS C:\\Users\\001> $password = \"YourPassword123\" PS C:\\Users\\001> $outDir = \"$env:USERPROFILE\\.openclaw\" PS C:\\Users\\001> $cert = Import-PfxCertificate -File",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "where.exe",
+        "cert.pfx",
+        "import-pfxcertificate",
+        "users",
+        "openssl",
+        "信息",
+        "提供",
+        "模式"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "User: position 1 Supply values for the following parameters: TypeName:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "position",
+        "supply",
+        "values",
+        "following",
+        "parameters",
+        "typename"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: 那个 API 不存在，用另一种方式导出私钥： ```powershell # 完整导出私钥的脚本 $pfxPath = \"$env:USERPROFILE\\.openclaw\\cert.pfx\" $password = \"YourPassword123\" $outDir = \"$env:USERPROFILE\\.openclaw\" # 用 RSA 方式读取 PFX（包含私钥） $rsa = [System.Security.Cryptography.X509Certificates.RSACertificateExtensions]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "cert.pfx",
+        "那个",
+        "api",
+        "不存在",
+        "一种",
+        "方式",
+        "导出",
+        "powershell"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "User: PS C:\\Users\\001> dir \"$outDir\\*.pem\" Directory: C:\\Users\\001\\.openclaw Mode LastWriteTime Length Name ---- ------------- ------ ---- -a--- 2026/5/8 22:27 796 cert.pem -a--- 2026/5/8 22:29 5 key.pem PS C:\\Users\\001>",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "2026/5/8",
+        "cert.pem",
+        "key.pem",
+        "users",
+        "dir",
+        "outdir",
+        "pem",
+        "directory"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Assistant: `key.pem` 只有 5 字节，导出失败了。私钥没有正确导出，需要重新生成证书（这次标记为可导出）： ```powershell # 1. 删除旧的 Remove-Item \"$env:USERPROFILE\\.openclaw\\cert.pem\", \"$env:USERPROFILE\\.openclaw\\key.pem\", \"$env:USERPROFILE\\.openclaw\\cert.pfx\" -ErrorAction SilentlyContinue # 2. 重新生成证书（标记私钥可导出） $params = @{ D",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "key.pem",
+        "remove-item",
+        "cert.pem",
+        "cert.pfx",
+        "只有",
+        "导出",
+        "失败",
+        "没有"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: 5. 导出私钥 $rsa = [System.Security.Cryptography.X509Certificates.RSACertificateExtensions]::GetRSAPrivateKey($cert) $privateKeyPem = \"***\" Set-Content -Path \"$env:USERPROFILE\\.openclaw\\key.pem\" -Value $privateKeyPem -Encoding ASCII # 6. 检查 Write-Host \"文件大小：\" dir \"$env:USE",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "set-content",
+        "key.pem",
+        "write-host",
+        "导出",
+        "rsa",
+        "getrsaprivatekey",
+        "cert",
+        "privatekeypem"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "User: 整合成一次运行的shell",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "整合",
+        "一次",
+        "运行",
+        "shell"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: ```powershell # 清理旧文件 Remove-Item \"$env:USERPROFILE\\.openclaw\\cert.pem\",\"$env:USERPROFILE\\.openclaw\\key.pem\",\"$env:USERPROFILE\\.openclaw\\cert.pfx\" -ErrorAction SilentlyContinue # 生成证书（私钥可导出） $cert = New-SelfSignedCertificate -DnsName \"10.6.22.1\" -CertStoreLocation \"Cer",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "remove-item",
+        "cert.pem",
+        "key.pem",
+        "cert.pfx",
+        "new-selfsignedcertificate",
+        "10.6.22.1",
+        "powershell",
+        "清理"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: [System.Security.Cryptography.X509Certificates.RSACertificateExtensions]::GetRSAPrivateKey($cert) $keyBytes = $rsa.ExportRSAPrivateKey() $keyPem = \"***\" Set-Content -Path \"$env:USERPROFILE\\.openclaw\\key.pem\" -Value $keyPem -Encoding ASCII # 检查 dir \"$env:USERPROFILE\\.op",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "rsa.exportrsaprivatekey",
+        "set-content",
+        "key.pem",
+        "getrsaprivatekey",
+        "cert",
+        "keybytes",
+        "keypem",
+        "set"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-08.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-08.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-05-08.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "User: PS C:\\Users\\001> # 清理旧文件 PS C:\\Users\\001> Remove-Item \"$env:USERPROFILE\\.openclaw\\cert.pem\",\"$env:USERPROFILE\\.openclaw\\key.pem\",\"$env:USERPROFILE\\.openclaw\\cert.pfx\" -ErrorAction SilentlyContinue PS C:\\Users\\001> PS C:\\Users\\001> # 生成证书（私钥可导出） PS C:\\Users\\001> $cert = New-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-08T19:00:02.176Z",
+      "lastRecalledAt": "2026-05-08T19:00:02.176Z",
+      "queryHashes": [
+        "d62c1963872e"
+      ],
+      "recallDays": [
+        "2026-05-09",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "remove-item",
+        "cert.pem",
+        "key.pem",
+        "cert.pfx",
+        "users",
+        "清理",
+        "文件",
+        "remove"
       ]
     }
   }
