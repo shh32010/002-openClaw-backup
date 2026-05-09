@@ -19,19 +19,17 @@
 
 > ⚠️ 备份已排除 `completions/` 缓存、`plugin-runtime-deps/`（npm 依赖，可再生）、日志文件和锁文件。
 
-## 🧩 已安装技能（11 个）
+## 🧩 已安装技能（62 个）
 
-### 工作区技能（11 个）
+### 工作区技能（9 个）
 *位于 `~/.openclaw/workspace/skills/`*
 
 | 技能 | 功能 |
 |------|------|
 | `agent-browser-core` | 浏览器自动化（Rust + Playwright） |
-| `bailian-web-search` | 阿里百炼网页搜索（AI 优化） |
-| `capability-evolver` | AI 自我进化引擎，持续分析与优化能力 |
 | `find-skills` | 技能搜索与安装助手 |
-| `office-editor` | Word/Excel/PowerPoint 文件创建与编辑 |
 | `office-document-editor` | 专业 Word 编辑（修订模式、Git 版本控制） |
+| `office-editor` | Word/Excel/PowerPoint 文件创建与编辑 |
 | `office-toolkit` | Office 综合工具包（读写、格式转换、批处理） |
 | `openclaw-backup` | 备份与恢复管理 |
 | `skill-vetter` | 技能安全审查，安装前风险评估 |
@@ -65,12 +63,8 @@
 
 | 任务名 | 时间 | 模型 | 状态 | 说明 |
 |--------|------|------|------|------|
-| 早安问候 | 每天 07:00–09:00 | mimo-v2.5-pro | ✅ 正常 | 早间问候语 |
-| 午间问候 | 每天 12:00–14:00 | mimo-v2.5-pro | ✅ 正常 | 午间问候语 |
-| 晚间问候 | 每天 19:00 | mimo-v2.5-pro | ⚠️ 异常 | 连续超时，待排查 |
-| 睡前问候 | 每天 21:00 | mimo-v2.5-pro | ✅ 正常 | 睡前问候语 |
-| 每日天气提醒 | 每天 08:00、19:00 | mimo-v2.5-pro | ✅ 正常 | 扬州邗江区天气 |
-| **每日备份** | **每天 03:00** | mimo-v2.5-pro | ✅ 已修复 | **tar 打包 + git push** |
+| **每日备份** | **每天 03:00** | deepseek-v4-pro | ✅ 正常 | **tar 打包 + git push** |
+| Memory Dreaming | 每天 03:00 | 默认 | ✅ 正常 | 短期记忆自动晋升 |
 
 ## 🔄 备份流程
 
@@ -119,7 +113,7 @@ openclaw gateway start
 │   ├── memory/            # 记忆文件
 │   └── skills/            # 已安装技能
 ├── cron/                  # 定时任务配置
-└── extensions/            # 插件（微信等）
+└── extensions/            # 插件
 ```
 
 ## 🔑 Git 配置
@@ -130,21 +124,21 @@ openclaw gateway start
 
 ## 🤖 模型配置
 
-| 用途 | Provider | 模型 | 状态 |
-|------|----------|------|------|
-| **主模型** | xiaomi-coding | `mimo-v2.5-pro`（推理已开启） | ✅ 正常 |
-| **备用模型 1** | gpt-agent.cc | `claude-sonnet-4-6` | ✅ 已配置 |
-| **备用模型 2** | Nvidia Nim | `deepseek-ai/deepseek-v4-pro` | ✅ 已配置 |
+| 用途 | Provider | 模型 | 上下文窗口 | 状态 |
+|------|----------|------|-----------|------|
+| **主模型** | xiaomi-coding | `mimo-v2.5-pro` | 1M tokens | ✅ 正常 |
+| **备用模型 1** | custom-gpt-agent-cc | `claude-sonnet-4-6` | 196K tokens | ✅ 已配置 |
+| **备用模型 2** | nvidia | `deepseek-ai/deepseek-v4-pro` | 1M tokens | ✅ 已配置 |
 
-> 定时任务使用 `mimo-v2.5-pro`；当主模型不可用时，自动切换到备用模型。
+> 主模型：xiaomi-coding/mimo-v2.5-pro；备用：nvidia/deepseek-ai/deepseek-v4-pro
 
 ## 🔌 已安装插件
 
 | 插件 | 状态 | 说明 |
 |------|------|------|
-| `openclaw-weixin` | ✅ 启用 | 微信通道 |
-| `openclaw-web-search` | ✅ 启用 | Web 搜索 |
+| `anthropic` | ✅ 启用 | Anthropic API 支持 |
 | `memory-core` | ✅ 启用 | 记忆系统（dreaming 已开启） |
+| `nvidia` | ✅ 启用 | Nvidia Nim 模型支持 |
 
 ---
 
@@ -154,8 +148,8 @@ openclaw gateway start
 
 | 日期 | 时间 | 文件大小 | 备份文件路径 |
 |------|------|----------|--------------|
-| 2026-04-30 | 13:13 | 79.7 MB | `C:\Users\002\openclaw-backups\openclaw-2026-04-30_1313.zip` |
+| 2026-05-09 | 20:55 | 435.9 MB | `C:\Users\002\openclaw-backups\openclaw-2026-05-09_2055.zip` |
 
 ---
 
-_本文件最后更新于 2026-04-30_
+_本文件最后更新于 2026-05-09_
