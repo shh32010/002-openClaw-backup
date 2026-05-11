@@ -1,0 +1,2 @@
+[main/sessions/main/0b830058-3cb6-4887-aafb-5aea2f9e138b.jsonl#L2] Assistant: ✅ Session reset.
+[main/sessions/main/0b830058-3cb6-4887-aafb-5aea2f9e138b.jsonl#L5] User: 我想和10.6.22.1进行大文件传输，
