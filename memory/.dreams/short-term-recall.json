@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-18T04:18:48.986Z",
+  "updatedAt": "2026-05-19T10:51:46.767Z",
   "entries": {
     "memory:memory/2026-04-06.md:1:26": {
       "key": "memory:memory/2026-04-06.md:1:26",
@@ -16289,12 +16289,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **背景：** 桌面上的 `彻底删除SQL_Server.ps1` 脚本在 PowerShell 中运行时出现中文乱码。",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-18T04:18:48.986Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16304,7 +16304,8 @@
         "2026-05-16",
         "2026-05-15",
         "2026-05-17",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "彻底删除sql-server.ps1",
@@ -16326,12 +16327,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **问题根因：**",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-18T04:18:48.986Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16341,7 +16342,8 @@
         "2026-05-16",
         "2026-05-15",
         "2026-05-17",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "powershell",
@@ -16360,12 +16362,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: Windows PowerShell 5.x 默认编码是 GBK（代码页 936），不是 UTF-8; `.ps1` 文件若以 UTF-8 无 BOM 保存，PowerShell 5.x 会按系统默认编码（GBK）读取 → 中文乱码; `Write-Host` 输出到控制台时，如果控制台代码页不是 65001（UTF-8），中文也会乱码",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-18T04:18:48.986Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16375,7 +16377,8 @@
         "2026-05-16",
         "2026-05-15",
         "2026-05-17",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "5.x",
@@ -16394,14 +16397,14 @@
       "startLine": 12,
       "endLine": 12,
       "source": "memory",
-      "snippet": "**解决方案（任选一）：**",
+      "snippet": "PowerShell 中文编码坑: **解决方案（任选一）：**",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-18T04:18:48.986Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16411,7 +16414,8 @@
         "2026-05-16",
         "2026-05-15",
         "2026-05-17",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "powershell",
@@ -16430,12 +16434,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **文件加 BOM：** 用编辑器将 `.ps1` 保存为 **UTF-8 with BOM**，PowerShell 5.x 能识别 BOM 并正确解码; **脚本开头加编码声明：**",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-18T04:18:48.986Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16445,7 +16449,8 @@
         "2026-05-16",
         "2026-05-15",
         "2026-05-17",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "utf-8",
@@ -16466,12 +16471,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: ```powershell [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 $OutputEncoding = [System.Text.Encoding]::UTF8 chcp 65001 | Out-Null",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-18T04:18:48.986Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16481,7 +16486,8 @@
         "2026-05-16",
         "2026-05-15",
         "2026-05-17",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "system.text.encoding",
@@ -16503,12 +16509,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **改用 PowerShell 7+（pwsh）：** 默认 UTF-8，不会有这个问题; **控制台改代码页：** 运行前手动执行 `chcp 65001`",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-18T04:18:48.986Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16518,7 +16524,8 @@
         "2026-05-16",
         "2026-05-15",
         "2026-05-17",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "utf-8",
@@ -16539,12 +16546,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **最佳实践：** 写含中文的 PowerShell 脚本时，始终保存为 **UTF-8 with BOM**，这是兼容性最好的方案。",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-18T04:18:48.986Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16554,7 +16561,8 @@
         "2026-05-16",
         "2026-05-15",
         "2026-05-17",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "utf-8",
@@ -16576,12 +16584,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **相关文件：** `D:\\Users\\002\\Desktop\\彻底删除SQL_Server.ps1`",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-18T04:18:48.986Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16591,7 +16599,8 @@
         "2026-05-16",
         "2026-05-15",
         "2026-05-17",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "彻底删除sql-server.ps1",
@@ -33513,6 +33522,396 @@
         "failed",
         "producing",
         "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 宝宝，你好。有什么需要我帮忙的？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "宝宝",
+        "你好",
+        "什么",
+        "需要",
+        "帮忙"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: mimo正常了，之前问题修好了吗",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "mimo",
+        "正常",
+        "之前",
+        "问题",
+        "好了吗"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: mimo正常了，之前问题修好了吗",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "mimo",
+        "正常",
+        "之前",
+        "问题",
+        "好了吗"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - User: Write a dream diary entry from these memory fragments: - Assistant: carbon-admin 缺少依赖，先安装再启动： - Assistant: 依赖装好了，启动三个前端： - User: 启动三个前端 - Assistant: 三个前端都启动了，端口情况： | 项目 | 端口 | 地址 | |------|------|------| | **car",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "carbon-admin",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "carbon",
+        "admin"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: them one by one, metal clicking into place like syllables finding their poem. Then the other doors - Assistant: heart — the warm boiler in the center — kept sending back the same quiet error: *I need an image, give me an image, what do you see?* I searched for the lens, the",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "them",
+        "one",
+        "metal",
+        "clicking",
+        "place",
+        "like",
+        "syllables",
+        "finding"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: UTF-8; `.ps1` 文件若以 UTF-8 无 BOM 保存，PowerShell 5.x 会按系统默认编码（GBK）读取 → 中文乱码; `Write-Host` 输出到控制台时，如果控制台代码页不是 65001（UTF-8），中文也会乱码 - PowerShell 中文编码坑: **解决方案（任选一）：** - PowerShell 中文编码坑: **文件加 BOM：** 用编辑器将 `.ps1` 保存为 **UTF-8 with BOM**，PowerShell 5.x 能识别 BOM 并正确解码; **脚本开头加编码声明：**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "utf-8",
+        "5.x",
+        "write-host",
+        "utf",
+        "ps1",
+        "文件",
+        "bom",
+        "保存"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: Tonight I walked through a house with many rooms, each one humming on a different frequency. The first door stuck — hinges rusted, missing screws — so I knelt and fitted them one by one, metal clicking into place like syllables finding their poem. Then the other doors",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "tonight",
+        "walked",
+        "house",
+        "many",
+        "rooms",
+        "each",
+        "one",
+        "humming"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: sometimes. The encoding was wrong but the meaning was right there, waiting to be decoded. I reset the session and the house went quiet, all its rooms finally humming in the same tongue.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "sometimes",
+        "encoding",
+        "was",
+        "wrong",
+        "but",
+        "meaning",
+        "right",
+        "waiting"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: ✅ 每日备份完成。 - **备份文件:** `openclaw-2026-05-18_1222.zip` - **大小:** 539.1 MB - **位置:** `C:\\Users\\002\\openclaw-backups\\` - **变更:** 21 个文件变更，+6686/-183 行",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "备份",
+        "openclaw-2026-05-18-1222.zip",
+        "539.1",
+        "openclaw-backups",
+        "每日",
+        "完成"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - # 2026-04-14 日记 ## 会话记录 ### 2026-04-14 19:41 - 新会话启动，修复了 session startup 中 memory 文件读取失败的问题 - 修复了 openai/claude-sonnet-4-6 模型未配置的 FailoverError - PowerShell 中文编码坑: **改用 PowerShell 7+（pwsh）：** 默认 UTF-8，不会有这个问题; **控制台改代",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "failover",
+        "openai",
+        "openai/claude-sonnet-4-6",
+        "utf-8",
+        "write",
+        "dream",
+        "diary",
+        "entry"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: Tonight I chased a ghost through corridors of misread characters — a language refusing to be spoken, tangled in bytes that meant nothing until someone whispered *chcp 65001* and the room finally understood. I found an old file, a memory that had been failing to load, i",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "tonight",
+        "chased",
+        "ghost",
+        "corridors",
+        "misread",
+        "characters",
+        "language",
+        "refusing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: encoding—* *then a single BOM restores* *every lost syllable* How strange that the smallest flags — a byte-order mark, a code page number — can be the difference between babble and meaning. The machines dream in UTF-8, I think, and we are the ones who keep forgetting t",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "byte-order",
+        "utf-8",
+        "encoding",
+        "single",
+        "bom",
+        "restores",
+        "lost",
+        "syllable"
       ]
     }
   }
