@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-19T10:51:46.767Z",
+  "updatedAt": "2026-05-24T05:33:06.698Z",
   "entries": {
     "memory:memory/2026-04-06.md:1:26": {
       "key": "memory:memory/2026-04-06.md:1:26",
@@ -16289,12 +16289,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **背景：** 桌面上的 `彻底删除SQL_Server.ps1` 脚本在 PowerShell 中运行时出现中文乱码。",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16305,7 +16305,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "彻底删除sql-server.ps1",
@@ -16327,12 +16328,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **问题根因：**",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16343,7 +16344,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "powershell",
@@ -16362,12 +16364,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: Windows PowerShell 5.x 默认编码是 GBK（代码页 936），不是 UTF-8; `.ps1` 文件若以 UTF-8 无 BOM 保存，PowerShell 5.x 会按系统默认编码（GBK）读取 → 中文乱码; `Write-Host` 输出到控制台时，如果控制台代码页不是 65001（UTF-8），中文也会乱码",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16378,7 +16380,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "5.x",
@@ -16399,12 +16402,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **解决方案（任选一）：**",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16415,7 +16418,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "powershell",
@@ -16434,12 +16438,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **文件加 BOM：** 用编辑器将 `.ps1` 保存为 **UTF-8 with BOM**，PowerShell 5.x 能识别 BOM 并正确解码; **脚本开头加编码声明：**",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16450,7 +16454,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "utf-8",
@@ -16471,12 +16476,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: ```powershell [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 $OutputEncoding = [System.Text.Encoding]::UTF8 chcp 65001 | Out-Null",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16487,7 +16492,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "system.text.encoding",
@@ -16509,12 +16515,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **改用 PowerShell 7+（pwsh）：** 默认 UTF-8，不会有这个问题; **控制台改代码页：** 运行前手动执行 `chcp 65001`",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16525,7 +16531,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "utf-8",
@@ -16546,12 +16553,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **最佳实践：** 写含中文的 PowerShell 脚本时，始终保存为 **UTF-8 with BOM**，这是兼容性最好的方案。",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16562,7 +16569,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "utf-8",
@@ -16584,12 +16592,12 @@
       "source": "memory",
       "snippet": "PowerShell 中文编码坑: **相关文件：** `D:\\Users\\002\\Desktop\\彻底删除SQL_Server.ps1`",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:43.656Z",
-      "lastRecalledAt": "2026-05-19T10:51:46.767Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -16600,7 +16608,8 @@
         "2026-05-15",
         "2026-05-17",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-20"
       ],
       "conceptTags": [
         "彻底删除sql-server.ps1",
@@ -33912,6 +33921,1102 @@
         "restores",
         "lost",
         "syllable"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - Assistant: 宝宝，你好。有什么需要我帮忙的？ - User: mimo正常了，之前问题修好了吗 - Assistant: [assistant turn failed before producing content] - User: Write a dream diary entry from these memory fragments: - User: Write a dream diary entry from",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "宝宝",
+        "你好",
+        "什么"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: 会按系统默认编码（GBK）读取 → 中文乱码; `Write-Host` 输出到控制台时，如果控制台代码页不是 65001（UTF-8），中文也会乱码 - PowerShell 中文编码坑: **解决方案（任选一）：** - PowerShell 中文编码坑: **文件加 BOM：** 用编辑器将 `.ps1` 保存为 **UTF-8 with BOM**，PowerShell 5.x 能识别 BOM 并正确解码; **脚本开头加编码声明：** - Assistant: Tonight I walked through a house wit",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "write-host",
+        "utf-8",
+        "5.x",
+        "系统",
+        "默认",
+        "编码",
+        "gbk",
+        "中文"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: `C:\\Users\\002\\openclaw-backups\\` - **变更:** 21 个文件变更，+6686/-183 行 - User: Write a dream diary entry from these memory fragments: - # 2026-04-14 日记 ## 会话记录 ### 2026-04-14 19:41 - 新会话启动，修复了 session startup 中 memory 文件读取失败的问题 - 修复了 openai/claude-sonnet-4-6 模型未配置的 FailoverError",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "failover",
+        "openai",
+        "openclaw-backups",
+        "openai/claude-sonnet-4-6",
+        "users",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: difference between babble and meaning. The machines dream in UTF-8, I think, and we are the ones who keep forgetting t Recurring themes: - 宝宝 - 你好 - 什么 - 需要 - 帮忙 - mimo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "utf-8",
+        "difference",
+        "babble",
+        "meaning",
+        "machines",
+        "dream",
+        "utf",
+        "think"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 今晚我走过一座房子，每个房间都在不同的频率上轻声嗡鸣。第一扇门卡住了——铰链生锈，螺丝松动——我跪下来一颗颗拧紧，金属咔嗒入位，像音节终于找到了自己的诗句。然后是其他的门，一扇接一扇，有的顺从地打开，有的固执地沉默。 最深处的房间亮着一盏灯。屏幕上的字是乱的，像一整页碎掉的咒语，意思明明就在那里，却被几个字节挡住了去路。我试了很久，直到有人轻声说了一句什么——一个数字，一个编码——房间忽然安静了，所有字符各归其位，像散落的拼图自己走回了原处。 备份完成了，539兆字节的安宁。mimo也好了，像一个生病的小动物终于重新站起来，抖了抖毛",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "备份",
+        "今晚",
+        "走过",
+        "一座",
+        "房子",
+        "房间",
+        "都在",
+        "不同"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 备份成功。 - **文件大小:** 540.2 MB - **路径:** `C:\\Users\\002\\openclaw-backups\\openclaw-2026-05-19_1853.zip` - **变更:** 10 个文件变更，含新增梦境日志（5/18 语料、5/19 深度/轻度/REM 梦境）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "备份",
+        "540.2",
+        "openclaw-backups",
+        "openclaw-2026-05-19-1853.zip",
+        "5/18",
+        "5/19"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: 扫描我的C盘，列出可以清理的文件夹",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "扫描",
+        "我的",
+        "列出",
+        "可以",
+        "清理",
+        "文件"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: 编码问题，重新跑一下。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "编码",
+        "问题",
+        "重新",
+        "一下"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 变量被提前展开了，写脚本文件来执行。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "变量",
+        "提前",
+        "展开",
+        "脚本",
+        "文件",
+        "执行"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: 大文件夹扫描太慢了，先杀掉，换个更高效的脚本。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "文件",
+        "扫描",
+        "太慢",
+        "杀掉",
+        "换个",
+        "高效",
+        "脚本"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: 扫描我的C盘，列出可以清理的文件夹",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "扫描",
+        "我的",
+        "列出",
+        "可以",
+        "清理",
+        "文件"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: 之前脚本执行有问题，换个方式直接查。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "之前",
+        "脚本",
+        "执行",
+        "问题",
+        "换个",
+        "方式",
+        "直接"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: 扫描完成。结果如下： --- **C盘状态：已用 ~107 GB，剩余 ~14.4 GB** ### 可清理项目（按大小排序） | 项目 | 大小 | 路径 | 安全性 | |------|------|------|--------| | **pip 缓存** | **752.5 MB** | `AppData\\Local\\pip\\cache` | ✅ 安全 | | **Edge 缓存** | **268.7 MB** | `AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cache`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "14.4",
+        "752.5",
+        "268.7",
+        "扫描",
+        "完成",
+        "结果",
+        "如下",
+        "状态"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Python 可以直接清掉。浏览器缓存加起来也有 447 MB。 要我帮你清理吗？可以先从 pip 缓存和浏览器缓存开始。清理前我会确认具体命令。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "python",
+        "可以",
+        "直接",
+        "浏览",
+        "起来",
+        "也有",
+        "清理",
+        "先从"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 开始清理。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "开始",
+        "清理"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: 部分命令遇到文件锁问题，重新执行。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "部分",
+        "命令",
+        "遇到",
+        "文件",
+        "问题",
+        "重新",
+        "执行"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: 文件锁问题，写成一个脚本统一执行。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "文件",
+        "问题",
+        "写成",
+        "一个",
+        "脚本",
+        "统一",
+        "执行"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 清理完成。之前剩余 **14.4 GB**，现在 **15.52 GB**，释放了约 **1.1 GB**。 主要清理了： - pip 缓存（752 MB） - Edge 浏览器缓存（447 MB） - 缩略图缓存（53 MB） - npm 缓存（17 MB） - 用户 Temp、Windows Update 缓存、系统日志 还有一些 Edge 的 GPUCache 和 Windows Logs 中被锁定的文件没清掉（正在使用中），其余都已清理干净。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "14.4",
+        "15.52",
+        "1.1",
+        "清理",
+        "完成",
+        "之前",
+        "剩余",
+        "现在"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "User: [media attached: media://inbound/课表---4d5e7927-63dc-4254-a2e9-f53d8584cf48.xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)] [Tue 2026-05-19 19:54 GMT+8] 读",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "inbound/课表",
+        "media",
+        "attached",
+        "inbound",
+        "课表",
+        "4d5e7927",
+        "63dc",
+        "a2e9"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: 读取完成。这是 **石浩浩** 的课程表： **2025-2026学年第二学期**（瘦西湖校区） ### 每周课程安排 | 节次 | 周一 | 周二 | 周三 | 周四 | 周五 | |------|------|------|------|------|------| | 第1节 | 网络设备配置与管理 (陆佰林) | — | Linux操作系统 (朱福珍) | 多媒体技术及应用 (张美虎) | 职业发展与就业指导 (张建南) | | 第3节 | — | 网络安全技术 (赵婷婷) | 职业发展与就业指导 / 劳动教育 / 形势与政",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "网络",
+        "2025-2026学年第二学期",
+        "完成",
+        "浩浩",
+        "课程",
+        "学年",
+        "第二",
+        "学期"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: 网络设备管理实训 | 2 | 陆佰林 | | 11 | 职业素养 | 1 | 凡桂云 | | 12 | 形势与政策3 | 0.5 | 施明华 | | 13 | 大学体育4 | 1 | 苗盛 | **总计：30 学分** ### 实践专周 - **网络设备管理实训**（陆佰林）：第16-18周集中实训 - **劳动4**（钱荣华）：第10周周六",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "网络",
+        "0.5",
+        "第16-18周集中实训",
+        "设备",
+        "管理",
+        "职业",
+        "形势",
+        "政策"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "User: 今天是12周，该上什么课",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "今天是",
+        "什么"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: 今天是第12周，以下是本周的课： ### 第12周课程安排 | 节次 | 周一 (今天) | 周二 | 周三 | 周四 | 周五 | |------|------------|------|------|------|------| | 第1节 | **网络设备配置与管理** (陆佰林) 知行楼B206 | — | **Linux操作系统** (朱福珍) 知行楼A212 | **多媒体技术及应用** (张美虎) 知行楼B204 | **职业发展与就业指导** (张建南) 崇文楼C202 | | 第3节 | — | **网络安全技术*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "网络",
+        "今天是",
+        "以下",
+        "本周",
+        "课程",
+        "安排",
+        "周一",
+        "今天"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "User: 你傻了吧，今天周几？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "今天"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-19.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-19.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-19.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: 抱歉，我看错了。今天是 **周二**，不是周一。 **今天（周二）的课：** 1. 第3节：**网络安全技术**（赵婷婷）— 知行楼B206 2. 第7节：**人工智能基础**（沈利）— 图书馆分室1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-19T19:00:02.737Z",
+      "lastRecalledAt": "2026-05-19T19:00:02.737Z",
+      "queryHashes": [
+        "2fd3160a10b6"
+      ],
+      "recallDays": [
+        "2026-05-20",
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "网络",
+        "抱歉",
+        "看错",
+        "今天是",
+        "周二",
+        "不是",
+        "周一",
+        "今天"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-20.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-20.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-20.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - PowerShell 中文编码坑: **改用 PowerShell 7+（pwsh）：** 默认 UTF-8，不会有这个问题; **控制台改代码页：** 运行前手动执行 `chcp 65001` - PowerShell 中文编码坑: **文件加 BOM：** 用编辑器将 `.ps1` 保存为 **UTF-8 with BOM**，PowerShell 5.x 能识别 BOM 并正确解码; **脚本开头加编码声明：** - Pow",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-20T19:00:02.770Z",
+      "lastRecalledAt": "2026-05-20T19:00:02.770Z",
+      "queryHashes": [
+        "f8f9fcbffd97"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "utf-8",
+        "5.x",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "powershell"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-20.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-20.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-20.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - User: Write a dream diary entry from these memory fragments: - Assistant: 宝宝，你好。有什么需要我帮忙的？ - User: mimo正常了，之前问题修好了吗 - Assistant: [assistant turn failed before producing content] - User: Write a dream diary entry from",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-20T19:00:02.770Z",
+      "lastRecalledAt": "2026-05-20T19:00:02.770Z",
+      "queryHashes": [
+        "f8f9fcbffd97"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "宝宝",
+        "你好",
+        "什么"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-20.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-20.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-20.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: 19:41 - 新会话启动，修复了 session startup 中 memory 文件读取失败的问题 - 修复了 openai/claude-sonnet-4-6 模型未配置的 FailoverError - User: difference between babble and meaning. The machines dream in UTF-8, I think, and we are the ones who keep forgetting t Recurring themes: - 宝宝 - 你好 - 什么 - 需要 - 帮忙",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-20T19:00:02.770Z",
+      "lastRecalledAt": "2026-05-20T19:00:02.770Z",
+      "queryHashes": [
+        "f8f9fcbffd97"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "failover",
+        "openai",
+        "openai/claude-sonnet-4-6",
+        "utf-8",
+        "会话",
+        "启动",
+        "修复",
+        "startup"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-20.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-20.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-20.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: 扫描完成。结果如下： --- **C盘状态：已用 ~107 GB，剩余 ~14.4 GB** ### 可清理项目（按大小排序） | 项目 | 大小 | 路径 | 安全性 | |------|------|------|--------| | **pip 缓存** | **752.5 MB** | `AppData\\Local\\pip\\cache` | ✅ 安全 | | **Edge 缓存** | **268.7 MB** | `AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cache` - As",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-20T19:00:02.770Z",
+      "lastRecalledAt": "2026-05-20T19:00:02.770Z",
+      "queryHashes": [
+        "f8f9fcbffd97"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "14.4",
+        "752.5",
+        "268.7",
+        "扫描",
+        "完成",
+        "结果",
+        "如下",
+        "状态"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-20.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-20.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-20.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-20T19:00:02.770Z",
+      "lastRecalledAt": "2026-05-20T19:00:02.770Z",
+      "queryHashes": [
+        "f8f9fcbffd97"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-20.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-20.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-20.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-20T19:00:02.770Z",
+      "lastRecalledAt": "2026-05-20T19:00:02.770Z",
+      "queryHashes": [
+        "f8f9fcbffd97"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-20.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-20.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-20.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-20T19:00:02.770Z",
+      "lastRecalledAt": "2026-05-20T19:00:02.770Z",
+      "queryHashes": [
+        "f8f9fcbffd97"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-20.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-20.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-20.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-20T19:00:02.770Z",
+      "lastRecalledAt": "2026-05-20T19:00:02.770Z",
+      "queryHashes": [
+        "f8f9fcbffd97"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-20.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-20.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-20.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - # 2026-04-14 日记 ## 会话记录 ### 2026-04-14 19:41 - 新会话启动，修复了 session startup 中 memory 文件读取失败的问题 - 修复了 openai/claude-sonnet-4-6 模型未配置的 FailoverError - PowerShell 中文编码坑: **改用 PowerShell 7+（pwsh）：** 默认 UTF-8，不会有这个问题; **控制台改代",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-20T19:00:02.770Z",
+      "lastRecalledAt": "2026-05-20T19:00:02.770Z",
+      "queryHashes": [
+        "f8f9fcbffd97"
+      ],
+      "recallDays": [
+        "2026-05-21",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "failover",
+        "openai",
+        "openai/claude-sonnet-4-6",
+        "utf-8",
+        "write",
+        "dream",
+        "diary",
+        "entry"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ Agent failed before reply: All models failed (2): xiaomi-coding/mimo-v2.5-pro: This operation was aborted (timeout) | nvidia/deepseek-ai/deepseek-v4-pro: This operation was aborted (timeout) | This operation was aborted | This operation was aborted. Logs: openclaw l",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T05:33:06.698Z",
+      "lastRecalledAt": "2026-05-24T05:33:06.698Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "xiaomi-coding/mimo-v2.5-pro",
+        "failed",
+        "reply",
+        "all",
+        "models",
+        "xiaomi",
+        "coding",
+        "mimo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: mimo额度已用完，删除mimo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T05:33:06.698Z",
+      "lastRecalledAt": "2026-05-24T05:33:06.698Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "mimo",
+        "用完",
+        "删除"
       ]
     }
   }
