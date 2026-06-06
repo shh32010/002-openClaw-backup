@@ -40,3 +40,12 @@
 
 <!-- openclaw-memory-promotion:memory:memory/2026-05-12.md:12:12 -->
 - **解决方案（任选一）：** [score=0.812 recalls=0 avg=0.620 source=memory/2026-05-12.md:12-12]
+
+## Promoted From Short-Term Memory (2026-06-06)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-12.md:13:14 -->
+- PowerShell 中文编码坑: **文件加 BOM：** 用编辑器将 `.ps1` 保存为 **UTF-8 with BOM**，PowerShell 5.x 能识别 BOM 并正确解码; **脚本开头加编码声明：** [score=0.837 recalls=0 avg=0.620 source=memory/2026-05-12.md:13-14]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-12.md:20:21 -->
+- PowerShell 中文编码坑: **改用 PowerShell 7+（pwsh）：** 默认 UTF-8，不会有这个问题; **控制台改代码页：** 运行前手动执行 `chcp 65001` [score=0.837 recalls=0 avg=0.620 source=memory/2026-05-12.md:20-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-12.md:8:10 -->
+- PowerShell 中文编码坑: Windows PowerShell 5.x 默认编码是 GBK（代码页 936），不是 UTF-8; `.ps1` 文件若以 UTF-8 无 BOM 保存，PowerShell 5.x 会按系统默认编码（GBK）读取 → 中文乱码; `Write-Host` 输出到控制台时，如果控制台代码页不是 65001（UTF-8），中文也会乱码 [score=0.827 recalls=0 avg=0.620 source=memory/2026-05-12.md:8-10]
